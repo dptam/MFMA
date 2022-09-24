@@ -532,8 +532,8 @@ def main():
         )
 
     def preprocess_function(examples):
-        mask_ratio_a = data_args.mask_ratio1
-        mask_ratio_s = data_args.mask_ratio2
+        mask_ratio_a = 0.6
+        mask_ratio_s = 0.6
         
         inputs_2 = examples[text_column]
         inputs_1 = examples[summary_column]
